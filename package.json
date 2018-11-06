@@ -1,0 +1,14 @@
+{
+  "name": "ews",
+  "version": "0.1.0",
+  "description": "A http webserver by Felix Eckert",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "node src/server.js"
+  },
+  "author": "Felix Eckert",
+  "license": "ISC",
+  "devDependencies": {
+    "connect": "^3.6.6"
+  }
+}

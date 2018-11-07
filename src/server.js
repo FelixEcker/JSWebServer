@@ -19,13 +19,13 @@ const VERSION = PACKAGE.version;
 
 // Import different modules
 const http    = require("http");
-const connect = require("connect");
+const express = require("express");
 
-const connectUtil = require("./lib/util/connect");
+const expressUtil = require("./lib/util/express");
 
-const app = connect();
+const app = express();
 
-app.use("/", connectUtil.root);
+app.get("/", expressUtil.root);
 
 log("HTTP WebServer by Felix Eckert");
 log(`Version ${VERSION}`);
